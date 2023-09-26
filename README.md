@@ -1,5 +1,5 @@
 # [![My Skills](https://skills.thijs.gg/icons?i=js)](https://skills.thijs.gg) groom-data-extraction
-Description
+This app will help you to extract student data (such as student name, email, assigenments done or not, date of submission etc.) in a google sheet file.
 <br/>
 <br/>
 ![GitHub followers](https://img.shields.io/github/followers/errixed)
@@ -7,11 +7,17 @@ Description
 ![GitHub watchers](https://img.shields.io/github/watchers/errixed/groom-data-extraction)
 ![GitHub Repo stars](https://img.shields.io/github/stars/errixed/groom-data-extraction)
 ## Services
-<img
-src="https://www.gstatic.com/images/branding/product/2x/classroom_96dp.png"
-align="left"
-width="96px"/>
+
 <img
 src="https://www.gstatic.com/images/branding/product/2x/sheets_96dp.png"
 align="left"
-width="96px"/>
+width="70px"/>
+### sheets
+
+<img
+src="https://www.gstatic.com/images/branding/product/2x/classroom_96dp.png"
+align="left"
+width="70px"/>
+### classroom
+
+<br/>
