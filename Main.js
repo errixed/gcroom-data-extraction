@@ -16,7 +16,7 @@ function courseData() {
 }
 
 function assignmentData() {
-  var courseId = '524510349937';
+  var courseId = 'COURSE_ID';
 
   try {
     var classwork = Classroom.Courses.CourseWork.list(courseId);
@@ -40,8 +40,8 @@ function assignmentData() {
 }
 
 function submissionData() {
-  var courseId = "524510349937";
-  var assignmentId = "524521431584";
+  var courseId = "COURSE_ID";
+  var assignmentId = "ASSIGNMENT_ID";
 
   try {
     var students = Classroom.Courses.Students.list(courseId).students;
