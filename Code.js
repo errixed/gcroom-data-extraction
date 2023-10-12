@@ -1,4 +1,4 @@
-// IMPORTANT; MIT LICENSE attached. Copy Rights by Amir H. Shekarabi 2023. free to use ny mentioning the source
+// IMPORTANT; MIT LICENSE attached. Copyright (c) 2023 Amir H. Shekarabi. Free to use by mentioning the source
 // IMPORTANT; create a google sheet, go to extension tab, select apps script. run the code from there
 // IMPORTANT; appsscript.json file is required with all the codes in it
 
