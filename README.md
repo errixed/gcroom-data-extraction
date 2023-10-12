@@ -1,4 +1,4 @@
-# [![My Skills](https://skills.thijs.gg/icons?i=js)](https://skills.thijs.gg) groom-data-extraction
+# [![My Skills](https://skills.thijs.gg/icons?i=js)](https://skills.thijs.gg) gcroom-data-extraction
 This code gives you with the submission status of all students in all assignments in the selected course along with their name and email in the google sheets.
 <br/>
 <br/>
