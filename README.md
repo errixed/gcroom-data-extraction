@@ -1,5 +1,5 @@
 # [![My Skills](https://skills.thijs.gg/icons?i=js)](https://skills.thijs.gg) groom-data-extraction
-This app will help you to extract student data (such as student name, email, assigenments done or not, date of submission etc.) in a google sheet file.
+This code gives you with the submission status of all students in all assignments in the selected course along with their name and email in the google sheets.
 <br/>
 <br/>
 ![GitHub followers](https://img.shields.io/github/followers/errixed)
@@ -23,3 +23,9 @@ width="70px"/>
 <br/>
 
 ## Setup
+1. go to `Google Drive`
+2. create a `new Google Sheets`
+3. in the `Extensions` tab, select `Apps Script` (Apps Script will be opened)
+4. in Apps Script, go to `Settings` and check the `Show "appsscript.json" manifest file in editor` option
+5. copy and paste codes in `appsscript.json` from this repo to apps script
+6. copy and paste codes in `Code.gs` from this repo to apps script
