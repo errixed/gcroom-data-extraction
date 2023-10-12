@@ -33,5 +33,4 @@ width="70px"/>
 
 ## On Run
  - Run courseData function to get course IDs that you have access with
-<br/>
  - Run assignmentSubmissionState function to get students data (names, emails, submission statuses)
