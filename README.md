@@ -29,3 +29,7 @@ width="70px"/>
 4. in Apps Script, go to `Settings` and check the `Show "appsscript.json" manifest file in editor` option
 5. copy and paste codes in `appsscript.json` from this repo to apps script
 6. copy and paste codes in `Code.gs` from this repo to apps script
+7. replace `SELECTED_COURSE_ID` on line 26 with `your course ID`
+
+## On Run
+Run 
