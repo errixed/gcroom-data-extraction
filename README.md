@@ -32,5 +32,5 @@ width="70px"/>
 7. replace `SELECTED_COURSE_ID` on line 26 with `your course ID`
 
 ## On Run
- - Run courseData function to get course IDs that you have access with
- - Run assignmentSubmissionState function to get students data (names, emails, submission statuses)
+ - Run `courseData` function to get course IDs that you have access with
+ - Run `assignmentSubmissionState` function to get students data (names, emails, submission statuses)
