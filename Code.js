@@ -23,7 +23,7 @@ function courseData() {
 function assignmentSubmissionState() {
 
   // replace SELECTED_COURSE_ID with your course ID of choice
-  var courseId = '524510349937';
+  var courseId = 'SELECTED_COURSE_ID';
 
   var assignments = Classroom.Courses.CourseWork.list(courseId).courseWork;
   var students = Classroom.Courses.Students.list(courseId).students;
