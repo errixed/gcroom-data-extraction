@@ -21,10 +21,10 @@ function courseData() {
 }
 
 // assignmentSubmissionState function will insert all student names, student emails and status of submission of every assignment in the selected course, to the created google sheet
-function assignmentSubmissionState() {
+function insertData() {
 
   // replace SELECTED_COURSE_ID with your course ID of choice
-  var courseId = 'SELECTED_COURSE_ID';
+  var courseId = '524510349937';
 
   var assignments = Classroom.Courses.CourseWork.list(courseId).courseWork;
   var students = Classroom.Courses.Students.list(courseId).students;
@@ -98,4 +98,65 @@ function assignmentSubmissionState() {
 
   // if code execute successfully, you will see this message in the terminal
   Logger.log("EXECUTED SUCCESSFULLY")
+}
+
+// notifier function will check students one by one and tell which one didn't do their assignments 
+function checkData() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+  var data = sheet.getDataRange().getValues();
+  var numRows = data.length;
+  var numCols = data[0].length;
+  var columnData = [];
+  for (var col = 0; col < numCols; col++) {
+    for (var row = 0; row < numRows; row++) {
+      var cellValue = data[row][col];
+      columnData.push(cellValue);
+    }
+  }
+  var eachColumnData = [];
+  for (var i = 0; i < columnData.length; i += numRows) {
+    eachColumnData.push(columnData.slice(i, i + numRows));
+  }
+  
+  var messageData = [];
+  var names = [];
+  for (var i = 0; i < eachColumnData.length; i ++) {
+    for (var j = 0; j < eachColumnData[i].length; j++) {
+      names.push(eachColumnData[0][j])
+      if (["CREATED", "NEW"].includes(eachColumnData[i][j])) {
+        messageData.push(eachColumnData[0][j], eachColumnData[1][j], eachColumnData[i][0])
+      }
+    }
+  }
+
+  var eachMessageData = [];
+  for (var i = 0; i < messageData.length; i += 3) {
+    eachMessageData.push(messageData.slice(i, i + 3));
+  }
+
+  var groupedMessages = [];
+  eachMessageData = eachMessageData.forEach(arr => {
+    var key = arr[0];
+    if (!groupedMessages[key]) {
+      groupedMessages[key] = [];
+    }
+    groupedMessages[key].push(arr);
+  })
+  var flatedGroupedMessages = Object.values(groupedMessages).flat();
+
+  var mergedArrays = [];
+  for (var subArray of flatedGroupedMessages) {
+    var key = subArray[0];
+    if (mergedArrays[key]) {
+      mergedArrays[key] = [...new Set(mergedArrays[key].concat(subArray))];
+    } else {
+      mergedArrays[key] = subArray;
+    }
+  }
+  var message = Object.values(mergedArrays);
+  
+  for (var i = 0; i < message.length; i++) {
+    Logger.log(message[i]);
+  }
 }
