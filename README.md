@@ -1,4 +1,20 @@
-# [![My Skills](https://skills.thijs.gg/icons?i=js)](https://skills.thijs.gg) gcroom-data-extraction
+<a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js" />
+</a>
+<img
+src="https://www.gstatic.com/images/branding/product/2x/sheets_96dp.png"
+align="left"
+width="70px"/>
+<img
+src="https://www.gstatic.com/images/branding/product/2x/classroom_96dp.png"
+align="left"
+width="70px"/>
+<img
+src="https://www.gstatic.com/images/branding/product/2x/gmail_96dp.png"
+align="left"
+width="70px"/>
+
+# gcroom-data-extraction
 This code gives you with the submission status of all students in all assignments in the selected course along with their name and email in the google sheets.
 <br/>
 <br/>
