@@ -1,42 +1,30 @@
-<a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js" />
-</a>
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=js" />
 <img
 src="https://www.gstatic.com/images/branding/product/2x/sheets_96dp.png"
-align="left"
-width="70px"/>
+width="60px"/>
 <img
 src="https://www.gstatic.com/images/branding/product/2x/classroom_96dp.png"
-align="left"
-width="70px"/>
+width="60px"/>
 <img
 src="https://www.gstatic.com/images/branding/product/2x/gmail_96dp.png"
-align="left"
-width="70px"/>
+width="60px"/>
 
 # gcroom-data-extraction
-This code gives you with the submission status of all students in all assignments in the selected course along with their name and email in the google sheets.
+This code is a extenstion for a Google Sheets. It will help you to extract the students' assignments status from Google Classrooms into Sheets.
+This code will help you to schedule sending email to the student who didn't submit their assignment.
+Also you can schedule data extraction time daily or weakly to get the updates.
+
 <br/>
-<br/>
+
 ![GitHub followers](https://img.shields.io/github/followers/errixed)
 ![GitHub forks](https://img.shields.io/github/forks/errixed/groom-data-extraction)
 ![GitHub watchers](https://img.shields.io/github/watchers/errixed/groom-data-extraction)
 ![GitHub Repo stars](https://img.shields.io/github/stars/errixed/groom-data-extraction)
-## Services
 
-<img
-src="https://www.gstatic.com/images/branding/product/2x/sheets_96dp.png"
-align="left"
-width="70px"/>
-### sheets
+</div>
 
-<img
-src="https://www.gstatic.com/images/branding/product/2x/classroom_96dp.png"
-align="left"
-width="70px"/>
-### classroom
-
-<br/>
 
 ## Setup
 1. Go to `Google Drive`
